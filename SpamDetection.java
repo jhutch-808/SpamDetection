@@ -57,7 +57,7 @@ public class SpamDetection {
     public static void processTestFile(String FileName){
         InputStream is = SpamDetection.class.getResourceAsStream(FileName);
         if(is ==null){
-            System.err.println(STR."Bad file name:\{FileName}");
+            System.err.println("Bad file name:" + FileName);
             System.exit(1);
         }
 
